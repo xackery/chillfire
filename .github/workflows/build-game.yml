@@ -41,18 +41,18 @@ jobs:
           mv ./templates/* ~/.local/share/godot/templates/4.2.1.stable
       - name: Make Exports Folder
         run: |
-          mkdir exports
+          mkdir -p exports
       - name: Export Windows Port
         run: |
-          mkdir ./exports/windows
+          mkdir -p ./exports/windows
           ./godot --path ./project.godot --export "Windows" ./exports/windows/$PROJECT_NAME.exe
       - name: Export Mac Port
         run: |
-          mkdir ./exports/mac
+          mkdir -p ./exports/mac
           ./godot --path ./project.godot --export "Mac" ./exports/mac/$PROJECT_NAME.zip
       - name: Export Linux Port
         run: |
-          mkdir ./exports/linux
+          mkdir -p ./exports/linux
           ./godot --path ./project.godot --export "Linux" ./exports/linux/$PROJECT_NAME.x86_64
       - name: Add Version Number to Exports
         run: |
