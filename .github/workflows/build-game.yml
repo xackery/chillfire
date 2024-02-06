@@ -26,9 +26,9 @@ jobs:
           fetch-depth: 0
       - name: Download + Authorize Godot
         run: |
-          curl -L -o godot.zip https://downloads.tuxfamily.org/godotengine/4.2.1/Godot_v4.2.1-stable_linux_headless.64.zip
+          curl -L -o godot.zip https://downloads.tuxfamily.org/godotengine/4.2.1/Godot_v4.2.1-stable_linux.x86_64.zip
           unzip godot.zip
-          mv Godot_v4.2.1-stable_linux_headless.64 godot
+          mv Godot_v4.2.1-stable_linux.x86_64 godot
           ls
           chmod +x godot
       - name: Download Export Templates
