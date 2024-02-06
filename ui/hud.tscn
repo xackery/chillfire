@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://m465eb4xj1w7"]
+
+[node name="Hud" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 640.0
+offset_bottom = 360.0
+
+[node name="Panel" type="Panel" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Control/Panel"]
+layout_mode = 0
+offset_right = 640.0
+offset_bottom = 360.0
+text = "Chillfire"
+horizontal_alignment = 1
+vertical_alignment = 1
