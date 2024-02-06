@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://c4jjxua10ncu0"]
+
+[ext_resource type="Texture2D" uid="uid://ehnp70kjcq8l" path="res://unit/boss_0.png" id="1_jhxkh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p2drr"]
+size = Vector2(41, 20)
+
+[node name="Boss0" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_jhxkh")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0.5, 1)
+shape = SubResource("RectangleShape2D_p2drr")

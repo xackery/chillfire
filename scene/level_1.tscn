@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://cxv4kr2qbevfc"]
+[gd_scene load_steps=4 format=3 uid="uid://cxv4kr2qbevfc"]
 
 [ext_resource type="PackedScene" uid="uid://m465eb4xj1w7" path="res://ui/hud.tscn" id="1_f48vf"]
 [ext_resource type="PackedScene" uid="uid://dg3135y4qx4rk" path="res://unit/ship.tscn" id="2_og4d3"]
+[ext_resource type="PackedScene" uid="uid://c4jjxua10ncu0" path="res://unit/boss_0.tscn" id="3_ndark"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -9,3 +10,6 @@
 
 [node name="Ship" parent="." instance=ExtResource("2_og4d3")]
 position = Vector2(322, 216)
+
+[node name="Boss0" parent="." instance=ExtResource("3_ndark")]
+position = Vector2(328, 40)
